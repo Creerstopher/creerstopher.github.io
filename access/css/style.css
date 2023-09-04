@@ -1,0 +1,268 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    transition: 0.3s;
+
+
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    margin: 0 56px;
+    align-items: center;
+}
+
+/*Main*/
+
+main {
+    background: url("../img/main/bg.png");
+
+    height: 100vh;
+}
+
+.main_items {
+    display: flex;
+    justify-content: space-between;
+
+    padding-top: 410px;
+}
+
+.main_main_text {
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat Alternates, sans-serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);;
+}
+
+.main_submain_text {
+    margin-top: 40px;
+
+    color: #FFF;
+    text-align: center;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/*Header*/
+
+header {
+    position: fixed;
+}
+
+.header_items {
+    margin-top: 10px;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.header_left ul {
+    display: flex;
+    gap: 32px;
+}
+
+.header_left ul li {
+    color: white;
+    font-size: 14pt;
+}
+
+.header_center {
+    margin-left: 300px;
+    margin-right: 700px;
+}
+
+.header_right ul {
+    display: flex;
+    gap: 30px;
+}
+
+/*Catalog*/
+
+.block {
+    margin-top: 40px;
+}
+
+.block_title {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 32px;
+}
+
+.block_title p {
+    color: #887569;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.block_title a {
+    color: #887569;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.block_items {
+    display: flex;
+    gap: 31px;
+    flex-wrap: wrap;
+}
+
+.items_card {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 325px;
+}
+
+.items_card_name {
+    margin-top: 8px;
+    color: #887569;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+.items_card_price {
+    margin-top: 2px;
+    color: #887569;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+/*Footer*/
+
+footer {
+    border-top: 1px solid rgba(136, 117, 105, 0.15);
+    margin-top: 70px;
+    height: 284px;
+}
+
+
+.footer_items {
+    margin-top: 40px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    gap: 30px;
+}
+
+.footer_block {
+    width: 262px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_block_desc {
+    color: #887569;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+.footer_block_title {
+    color: #887569;
+    font-family: Montserrat, sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+
+    margin-top: 10px;
+}
+
+.footer_block ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footer_block ul li a {
+    color: #887569;
+    font-family: Montserrat, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer_block_desc {
+    color: #887569;
+    font-family: Montserrat;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px; /* 142.857% */
+}
+
+
+@media screen and (max-width: 390px) {
+
+    .container {
+        margin: 0 32px;
+        align-items: center;
+    }
+
+    .header_left {
+        display: none;
+    }
+
+    .header_right {
+        display: none;
+    }
+
+    .header_center {
+        margin: 0;
+    }
+
+    .footer_items {
+        display: flex;
+        flex-direction: column;
+
+        gap: 30px;
+    }
+}
+
+@media screen and (max-width: 795px) {
+
+    .header_left {
+        display: none;
+    }
+
+    .header_right {
+        display: none;
+    }
+
+    .header_center {
+        margin-left: 270px;
+    }
+}
+
+
